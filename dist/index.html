@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.min.css ">
   <link rel="stylesheet" href="css/main.css">
   <title>ETA Elektronik Sistemleri</title>
 </head>
@@ -40,27 +41,49 @@
   <!-- slider start -->
 
   <div class="home-slider owl-carousel owl-theme">
-    <div class="item-1">
-      <div class="slider-text">
-        <span>Lorem, ipsum dolor.</span>
+
+    <div class="item">
+      <div class="slider_img">
+        <img src="img/slider-2.jpg" alt="">
+      </div>
+      <div class="slider_text-1">
+        <span>KEREMr.</span>
         <h1>Lorem ipsum dolor sit.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi!</p>
       </div>
     </div>
-    <div class="item-2">
-      <div class="slider-text">
-        <span>Lorem, ipsum dolor.</span>
+    <div class="item">
+      <div class="slider_img">
+        <img src="img/slider-3.jpg" alt="">
+      </div>
+      <div class="slider_text-2">
+        <div class="left-side">
+          <h1>Lorem ipsum dolor sit.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi!</p>
+        </div>
+        <div class="right-side">
+          <h2>Lorem, ipsum dolor.</h2>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> <span>Lorem, ipsum.</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Lorem, ipsum.</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Lorem, ipsum.</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Lorem, ipsum.</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="item">
+      <div class="slider_img ">
+        <img src="img/slider-1.jpg" alt="">
+      </div>
+      <div class="slider_text-3">
+        <span class="animate__animated animate__fadeInUp">balon</span>
         <h1>Lorem ipsum dolor sit.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi!</p>
       </div>
     </div>
-    <div class="item-3">
-      <div class="slider-text">
-        <span>Lorem, ipsum dolor.</span>
-        <h1>Lorem ipsum dolor sit.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, commodi!</p>
-      </div>
-    </div>
+
   </div>
 
   <!-- slider end -->
@@ -72,21 +95,14 @@
     const previcon = '<i class="fa-solid fa-arrow-right"></i>'
     $('.owl-carousel').owlCarousel({
       loop: true,
-      margin: 10,
       nav: true,
-      dot: true,
+      dots: true,
+      items: 1,
+      autoplay: true,
+      smartSpeed: 1200,
+      autoplayTimeout: 9000,
+      animateOut: 'fadeOut',
       navText: [nexticon, previcon],
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
     })
   </script>
   <script src="js/bootstrap.bundle.js"></script>
