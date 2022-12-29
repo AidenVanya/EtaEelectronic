@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/animate.min.css ">
+  <link rel="stylesheet" href="css/lc_lightbox.min.css">
+  <link rel="stylesheet" href="css/minimal.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/counting.css">
   <title>ETA Elektronik Sistemleri</title>
@@ -87,7 +89,9 @@
       </div>
     </div>
   </section>
+  <!-- slider end -->
 
+  <!-- count start -->
   <section class="counting">
     <div class="row wrapper">
       <div class="col-12 col-lg-3 count-container">
@@ -116,7 +120,9 @@
       </div>
     </div>
   </section>
+  <!-- count end -->
 
+  <!-- about start -->
   <section class="about-us">
     <div class="container">
       <div class="row">
@@ -141,10 +147,63 @@
       </div>
     </div>
   </section>
+  <!-- about end -->
 
-
-
-  <!-- slider end -->
+  <!-- gallery start -->
+  <section class="gallery">
+    <div class="container">
+      <h2 class="title">Yaptığımız Kurulumlar</h2>
+      <div id="lcl_elems_wrapper" class="gallery_content row">
+        <div class="thumb col-12 col-lg-4">
+          <div class="galery-card">
+            <div class="gallery-image">
+              <a href="img/page-1.png" class="image" title="image 1 title" data-lcl-txt="image 1 description"
+                data-lcl-author="image 1 author">
+                <img src="img/page-1.png">
+              </a>
+            </div>
+            <div class="image_text-container">
+              <h3 class="text-title">Lorem, ipsum dolor.</h3>
+              <span class="date"><i class="fa-solid fa-calendar"></i> 23 Ekim 2022</span>
+              <button class="info-btn">Daha Fazla</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumb col-12 col-lg-4">
+          <div class="galery-card">
+            <div class="gallery-image">
+              <a href="img/page-2.png" class="image" title="image 1 title" data-lcl-txt="image 1 description"
+                data-lcl-author="image 1 author">
+                <img src="img/page-2.png">
+              </a>
+            </div>
+            <div class="image_text-container">
+              <h3 class="text-title">Lorem, ipsum dolor.</h3>
+              <span class="date"><i class="fa-solid fa-calendar"></i> 23 Ekim 2022</span>
+              <button class="info-btn">Daha Fazla</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumb col-12 col-lg-4">
+          <div class="galery-card">
+            <div class="gallery-image">
+              <a href="img/page-3.png" class="image" title="image 1 title" data-lcl-txt="image 1 description"
+                data-lcl-author="image 1 author">
+                <img src="img/page-3.png">
+              </a>
+            </div>
+            <div class="image_text-container">
+              <h3 class="text-title">Lorem, ipsum dolor.</h3>
+              <span class="date"><i class="fa-solid fa-calendar"></i> 23 Ekim 2022</span>
+              <button class="info-btn">Daha Fazla</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- gallery end -->
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/mobile-navbar.js"></script>
@@ -164,8 +223,16 @@
       navText: [nexticon, previcon],
     })
   </script>
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      var $obj = lc_lightbox('#lcl_elems_wrapper a');
+    });
+  </script>
   <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/lc_lightbox.lite.min.js"></script>
+  <script src="js/alloy_finger.min.js"></script>
   <script src="js/counting.js"></script>
+  <script src="js/jquery.js"></script>
 </body>
 
 </html>
