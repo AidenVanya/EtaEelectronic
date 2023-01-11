@@ -1,0 +1,146 @@
+.footer {
+    background-color: #fff;
+    padding: 30px 0;
+    .footer_title {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    .footer-icon {
+        i {
+            color: #000;
+            font-size: 20px;
+        }
+    }
+    .footer_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p {
+            font-size: 17px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+        img {
+            width: 250px;
+        }
+    }
+    .footer_bar {
+        border-top: 1px solid #333;
+    }
+    .footer-nav {
+        text-align: center;
+        .footer-menu {
+            .menu-item {
+                display: inline-block;
+                color: #333;
+                padding: 8px 16px;
+                &:hover {
+                    display: inline-block;
+                    color: rgb(131, 65, 152);
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+    .hak {
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        i {
+            margin-right: 1rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            text-align: center;
+            padding: 0.6rem;
+            transition: all 0.7s;
+            color: #000;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        background-color: #fff;
+        padding: 30px 0;
+        .footer_title {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                sans-serif;
+        }
+        .footer-icon {
+            text-align: center;
+            i {
+                color: #000;
+                font-size: 20px;
+            }
+        }
+        .footer_text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p {
+                font-size: 17px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 400;
+            }
+            img {
+                width: 250px;
+            }
+        }
+        .footer_bar {
+            border-top: 1px solid #333;
+        }
+        .footer-nav {
+            text-align: center;
+            .footer-menu {
+                .menu-item {
+                    display: inline-block;
+                    color: #333;
+                    padding: 8px 16px;
+                    &:hover {
+                        display: inline-block;
+                        color: rgb(131, 65, 152);
+                        padding: 8px 16px;
+                    }
+                }
+            }
+        }
+        .hak {
+            text-align: center;
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            i {
+                margin-right: 1rem;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                text-align: center;
+                padding: 0.6rem;
+                transition: all 0.7s;
+                color: #000;
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

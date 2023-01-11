@@ -14,23 +14,65 @@
   <link rel="stylesheet" href="css/animate.min.css ">
   <link rel="stylesheet" href="css/lc_lightbox.min.css">
   <link rel="stylesheet" href="css/minimal.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/counting.css">
+  <link rel="icon" href="img/icon.ico" type="image/x-icon" />
   <title>ETA Elektronik Sistemleri</title>
 </head>
 
 <body>
   <!-- header start -->
+  <div id="loading">
+    <img src="img/loader.gif" alt="Yükleniyor..." />
+  </div>
+  <div class="popup-container">
+    <div class="popup">
+      <div class="message-title">Bize Ulaşın</div>
+      <div class="col-12 ">
+        <form action="https://formspree.io/f/xoqzqpap" method="post" class="message-form">
+          <div class="row">
+            <div class="col-12 ">
+              <input type="text" class="input-form_message" name="ad_soyad" id="ad_soyad"
+                placeholder="Adınızı Soyadınız *">
+            </div>
+            <div class="col-12 ">
+              <input type="email" name="mail" id="mail" class="input-form_message" placeholder="E-Postanız *">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <input type="number" name="number" id="number" class="input-form_message"
+                placeholder="Telefon Numaranız *">
+            </div>
+            <div class="col-12 ">
+              <input type="text" name="mesaj" id="mesaj" class="input-form_message" placeholder="Mesaj Konusu *">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <textarea name="contact_content" id="contact_content" class="input-form_message_area" cols="40" rows="6"
+                placeholder="Mesajınız"></textarea>
+            </div>
+          </div>
+          <input type="submit" class="message-submit" value="Gönder">
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <a id="contact-button" class="to-contact">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
   <header>
     <nav class="navbar">
       <div class="navbar_brand">
-        <a href="index.html"><img src="img/logo.png"></a>
+        <a href="index.html"><img src="img/brand.png"></a>
       </div>
       <ul class="navbar_links">
         <li class="navbar_link "><a href="index.html" class="active">Anasayfa</a></li>
-        <li class="navbar_link"><a href="">Hakkımızda</a></li>
-        <li class="navbar_link"><a href="">Projeler</a></li>
-        <li class="navbar_link"><a href="">İletişim</a></li>
+        <li class="navbar_link"><a href="about.html">Hakkımızda</a></li>
+        <li class="navbar_link"><a href="referances.html">Projeler</a></li>
+        <li class="navbar_link"><a href="contact.html">İletişim</a></li>
       </ul>
       <div class="burger">
         <div class="line-1"></div>
@@ -89,34 +131,76 @@
       </div>
     </div>
   </section>
+  <section class="mobile_slider">
+    <div id="slider_desktop" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="img/slider-1.jpg" class="d-block h-100 w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h2 class="animate__animated animate__fadeInUp animate__slow">E.T.A ELEKTRONİK GÜVENLİK SİSTEMLERİ
+              HİZMETİNİZDE</h2>
+            <p class="animate__animated animate__fadeInRight animate__slow">YENİ NESİL GÜVENLİK ve KAMERA KAYIT
+              CİHAZLARI</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="img/slider-2.png" class="d-block h-100 w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h2 class="animate__animated animate__fadeInUp animate__slow">ÜSTÜN PERFORMANSLI HIKVISION ÜRÜNLERİ</h2>
+            <p class="animate__animated animate__fadeInRight animate__slow">Son derece nitelikli bir Ar-Ge iş gücüne
+              sahip olan Hikvision, kapsamlı ürünler ve çözümler üretir.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="img/slider-3.jpg" class="d-block h-100 w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h2 class="animate__animated animate__fadeInUp animate__slow">ERTAN TAYFUN ATİLLA</h2>
+            <p class="animate__animated animate__fadeInRight animate__slow">Güvenlik Sistemleri Kurulum ve</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider_desktop" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider_desktop" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
   <!-- slider end -->
 
   <!-- count start -->
   <section class="counting">
     <div class="row wrapper">
-      <div class="col-12 col-lg-3 count-container">
+      <div class="col-12 col-md-3 count-container">
         <i class="fa-solid fa-briefcase"></i>
-        <span class="num" data-val="400">000</span>
-        <div class="ico">+</div>
-        <span class="text">Meals Delivered</span>
+        <p class="nomico">
+          <span class="num" data-val="400">000</span> <strong class="ico">+</strong>
+        </p>
+        <span class="text">Montaj</span>
       </div>
-      <div class="col-12 col-lg-3 count-container">
+      <div class="col-12 col-md-3 count-container">
         <i class="fa-solid fa-circle-check"></i>
-        <span class="num" data-val="340">000</span>
-        <div class="ico">%</div>
-        <span class="text">Happy Customers</span>
+        <p class="nomico">
+          <span class="num" data-val="99">00</span> <strong class="ico">%</strong>
+        </p>
+        <span class="text">Başarı</span>
       </div>
-      <div class="col-12 col-lg-3 count-container">
+      <div class="col-12 col-md-3 count-container">
         <i class="fa-solid fa-screwdriver-wrench"></i>
-        <span class="num" data-val="225">000</span>
-        <div class="ico">+</div>
-        <span class="text">Menu Items</span>
+        <p class="nomico">
+          <span class="num" data-val="600">000</span> <strong class="ico">+</strong>
+        </p>
+        <span class="text">Bakım</span>
       </div>
-      <div class="col-12 col-lg-3 count-container">
+      <div class="col-12 col-md-3 count-container">
         <i class="fas fa-star"></i>
-        <span class="num" data-val="6">0</span>
-        <div class="ico-year">YIL</div>
-        <span class="text">Five Stars</span>
+        <p class="nomico">
+          <span class="num" data-val="6">0</span> <strong class="ico">Yıl</strong>
+        </p>
+        <span class="text">Tecrübe</span>
       </div>
     </div>
   </section>
@@ -133,15 +217,16 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="about-us_text-container">
-            <h2>Lorem, ipsum.</h2>
+            <h2>Hakkımızda</h2>
             <div class="floating">
               <img src="img/banner.png" alt="">
             </div>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus nam facere inventore rerum quibusdam
-              ipsam! Sequi sapiente, mollitia delectus veniam, voluptates vero, eius odit ad beatae dolor hic omnis
-              voluptas.
+              Türkiye’nin sayılı markalarından, elektronik sektörünün öncülerinden olan ETA Elektronik, 2017 yılından
+              İstanbul’da hizmet vermeye başlamıştır. Kurulduğu günden bu yana uydu sistemleri, Elektrik ve Elektronik
+              sektöründe hizmet vermektedir.
             </p>
+            <a href="about.html" class="btn-about">Daha Fazla</a>
           </div>
         </div>
       </div>
@@ -157,53 +242,123 @@
         <div class="thumb col-12 col-lg-4">
           <div class="galery-card">
             <div class="gallery-image">
-              <a href="img/page-1.png" class="image" title="image 1 title" data-lcl-txt="image 1 description"
-                data-lcl-author="image 1 author">
-                <img src="img/page-1.png">
+              <a href="img/place-1.png" class="image-1" title="Maydonoz Döner"
+                data-lcl-txt="Dükkan içi kamera sistemleri montajı ve kurulumu tamamlandı." data-lcl-author="">
+                <div class="thumbnail"></div>
               </a>
             </div>
             <div class="image_text-container">
-              <h3 class="text-title">Lorem, ipsum dolor.</h3>
-              <span class="date"><i class="fa-solid fa-calendar"></i> 23 Ekim 2022</span>
-              <button class="info-btn">Daha Fazla</button>
+              <h3 class="text-title">Maydonoz Döner</h3>
+              <span class="date"><i class="fa-solid fa-calendar"></i> 29 Aralık 2022</span>
             </div>
           </div>
         </div>
         <div class="thumb col-12 col-lg-4">
           <div class="galery-card">
             <div class="gallery-image">
-              <a href="img/page-2.png" class="image" title="image 1 title" data-lcl-txt="image 1 description"
-                data-lcl-author="image 1 author">
-                <img src="img/page-2.png">
+              <a href="img/place-2.png" class="image-2" title="Modafima" data-lcl-txt="ETA Elektronik Güvenlik Sistemleri tarafından Ray spot, spot pano tasarımı ve elektrik pano dağılım
+              işlemleri tamamlanmıştır. " data-lcl-author="">
+                <div class="thumbnail"></div>
               </a>
             </div>
             <div class="image_text-container">
-              <h3 class="text-title">Lorem, ipsum dolor.</h3>
-              <span class="date"><i class="fa-solid fa-calendar"></i> 23 Ekim 2022</span>
-              <button class="info-btn">Daha Fazla</button>
+              <h3 class="text-title">Modafima</h3>
+              <span class="date"><i class="fa-solid fa-calendar"></i> 28 Kasım 2022</span>
             </div>
           </div>
         </div>
         <div class="thumb col-12 col-lg-4">
           <div class="galery-card">
             <div class="gallery-image">
-              <a href="img/page-3.png" class="image" title="image 1 title" data-lcl-txt="image 1 description"
-                data-lcl-author="image 1 author">
-                <img src="img/page-3.png">
+              <a href="img/place-3.png" class="image-3" title="Yakamoz Tekel"
+                data-lcl-txt="ETA Elektronik Güvenlik Sistemleri tarafından kamera montajı yapılmıştır."
+                data-lcl-author="">
+                <div class="thumbnail"></div>
               </a>
             </div>
             <div class="image_text-container">
-              <h3 class="text-title">Lorem, ipsum dolor.</h3>
-              <span class="date"><i class="fa-solid fa-calendar"></i> 23 Ekim 2022</span>
-              <button class="info-btn">Daha Fazla</button>
+              <h3 class="text-title">Yakamoz Tekel</h3>
+              <span class="date"><i class="fa-solid fa-calendar"></i> 24 Aralık 2022</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </section>
   <!-- gallery end -->
+
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <h3 class="footer_title">Hakkımızda</h3>
+          <div class="footer_text">
+            <p>
+              Türkiye’nin sayılı markalarından, elektronik sektörünün öncülerinden olan ETA Elektronik, 2017 yılından
+              İstanbul’da hizmet vermeye başlamıştır.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="footer_title">Adres</h3>
+          <div class="footer_text">
+            <p class="footer-icon">
+              <i class="fa-solid fa-location-dot"></i> Sarıköy Sk. No:5 Yunus 34873 Kartal/İstanbul
+            </p>
+            <img src="img/brand.png" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="footer_title">İLETİŞİM</h3>
+          <p class="footer-icon"><i class="fa-solid fa-phone"></i><span> 0533 766 45 34</span></p>
+          <p class="footer-icon"><i class="fa-solid fa-envelope"></i><span> e.tayfunatilla@gmail.com</span></p>
+        </div>
+      </div>
+      <div class="footer_bar"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-nav">
+            <ul class="footer-menu">
+              <li class="menu-item">
+                <a class="nav-link" href="index.html">ANASAYFA</a>
+              </li>
+              <li class="menu-item">
+                <a class="nav-link" href="about.html">HAKKIMIZDA</a>
+              </li>
+              <li class="menu-item">
+                <a class="nav-link" href="referances.html">PROJELER</a>
+              </li>
+              <li class="menu-item">
+                <a class="nav-link" href="contact.html">İLETİŞİM</a>
+              </li>
+            </ul>
+          </div>
+          <p class="hak">
+            &copy;2023, ETA Elektronik Sistemleri Tüm Hakları Saklıdır.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="social">
+            <a href="mailto: e.tayfunatilla@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:0533 766 45 34" target="_blank">
+              <i class="fa-solid fa-square-phone"></i>
+            </a>
+            <a href="https://www.instagram.com/eta.elektronikk/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/mobile-navbar.js"></script>
@@ -216,7 +371,7 @@
       dots: false,
       mouseDrag: false,
       items: 1,
-      // autoplay: true,
+      autoplay: true,
       autoplayTimeout: 9000,
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
@@ -233,6 +388,29 @@
   <script src="js/alloy_finger.min.js"></script>
   <script src="js/counting.js"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/page_up.js"></script>
+  <script>
+    window.addEventListener('load', fg_load)
+
+    function fg_load() {
+      document.getElementById('loading').style.display = 'none'
+    }
+  </script>
+  <!--Script-->
+  <script type="text/javascript">
+    const ContactBtn = document.querySelector("#contact-button")
+    var PopUp = document.querySelector(".popup")
+    ContactBtn.addEventListener("click", function () {
+      PopUp.classList.toggle("active")
+    }
+    );
+
+
+    document.querySelector("#close").addEventListener("click", function () {
+      document.querySelector(".popup").style.opacity = "0";
+      document.querySelector(".popup").style.pointerEvents = "none";
+    });
+  </script>
 </body>
 
 </html>

@@ -32,12 +32,15 @@ span.num {
     font-size: 3em;
 }
 .ico {
-    color: #ffffff;
     font-weight: 600;
+    color: #ffffff;
+
     font-size: 3em;
-    position: absolute;
-    top: 80px;
-    left: 147px;
+}
+.nomico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ico-year {
     color: #ffffff;
@@ -49,10 +52,11 @@ span.num {
 }
 span.text {
     color: #e0e0e0;
-    font-size: 1em;
+    font-size: 20px;
     text-align: center;
     pad: 0.7em 0;
-    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 600;
     line-height: 0;
 }
 @media screen and (max-width: 1024px) {
@@ -66,6 +70,12 @@ span.text {
     }
 }
 @media screen and (max-width: 768px) {
+    .counting {
+        margin-top: -300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .wrapper {
         width: 90vw;
         flex-wrap: wrap;
